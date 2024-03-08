@@ -7,7 +7,53 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-slate-500">
+    <div class="p-3 flex justify-center">
+      <form action="" id="form" class="flex flex-col gap-3 w-64 text-white">
+        <div class="flex justify-between items-center">
+          <label for=""> Name: </label>
+          <input
+            id="name"
+            type="text"
+            class="outline-none p-1 rounded-md hover:shadow-lg text-gray-700"
+            placeholder="zohre"
+          />
+        </div>
+        <div class="flex justify-between items-center">
+          <label for=""> Email: </label>
+          <input
+            id="email"
+            type="email"
+            class="outline-none p-1 rounded-md hover:shadow-lg text-gray-700"
+            placeholder="export@gmail.com"
+          />
+        </div>
+        <div class="flex justify-between items-center">
+          <label for=""> Phone: </label>
+          <input
+            id="phone"
+            class="outline-none p-1 rounded-md hover:shadow-lg text-gray-700"
+            type="tel"
+            placeholder="+98"
+          />
+        </div>
+        <button type="submit" class="bg-blue-500 py-1 shadow-md rounded-md">
+          Add
+        </button>
+      </form>
+    </div>
+    <section
+      id="section"
+      class="flex flex-col items-center h-[400px] bg-blue-400 overflow-x-hidden overflow-y-scroll mx-5 rounded-md shadow-lg"
+    >
+      <div
+        class="flex flex-col gap-2 bg-blue-300 p-2 w-5/6 h-32 m-5 rounded-md"
+      >
+        <p>name: <span>zohre</span></p>
+        <p>Email: <span>export@gmail.com</span></p>
+        <p>Phone: <span>+98935276400*</span></p>
+      </div>
+    </section>
     <script src="./main.js"></script>
   </body>
 </html>
